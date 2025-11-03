@@ -4,24 +4,22 @@ FROM eclipse-temurin:17-jdk-jammy
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy Maven wrapper and project files
+# Copy Maven wrapper and project files (but NOT building yet)
 COPY .mvn .mvn
 COPY mvnw mvnw
 COPY pom.xml pom.xml
 
-# Make Maven wrapper executable (CRITICAL for Linux-based builds)
+# Make Maven wrapper executable (required for Linux-based Docker)
 RUN chmod +x mvnw
-
-RUN ./mvnw package -DskipTests
 
 # Copy the rest of the source code
 COPY src src
 
-# Build the Spring Boot application (fat jar)
+# Build the Spring Boot application (fat jar, skip tests)
 RUN ./mvnw package -DskipTests
 
 # Expose the port your app runs on (default 8080)
 EXPOSE 8080
 
-# Run the jar file
+# Run the jar file (update jar name if needed)
 CMD ["java", "-jar", "target/FileSharingApp-0.0.1-SNAPSHOT.jar"]
