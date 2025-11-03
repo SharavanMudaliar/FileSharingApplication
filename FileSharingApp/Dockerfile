@@ -9,7 +9,10 @@ COPY .mvn .mvn
 COPY mvnw mvnw
 COPY pom.xml pom.xml
 
-# Download dependencies first (this helps with Docker cache)
+# Make Maven wrapper executable (CRITICAL for Linux-based builds)
+RUN chmod +x mvnw
+
+# Download dependencies first (cache efficiency)
 RUN ./mvnw dependency:go-offline
 
 # Copy the rest of the source code
