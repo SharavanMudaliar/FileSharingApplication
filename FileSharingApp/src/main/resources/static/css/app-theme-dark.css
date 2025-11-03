@@ -1,0 +1,99 @@
+/* app-theme-dark.css */
+/* NIGHT MODE / TRUE DARK */
+body {
+    background: #181a1b !important;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #e7eaf0;
+}
+
+.login-box, .main-box {
+    background: #23262f !important;
+    border-radius: 10px;
+    box-shadow: 0 2px 22px #18191f;
+    margin-top: 60px;
+    padding: 35px 30px;
+    color: #f4f6fa;
+}
+
+.brand-logo {
+    width: 90px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 1px 16px #181a1b;
+}
+
+.btn-google {
+    background-color: #ea4335 !important;
+    color: #fff !important;
+    border: none !important;
+}
+.btn-github {
+    background-color: #24292f !important;
+    color: #fff !important;
+    border: none !important;
+}
+.btn-google:hover, .btn-github:hover {
+    opacity: 0.90;
+    color: #fff !important;
+}
+.login-title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    color: #e7eaf0;
+}
+
+input[type="file"], input[type="number"], .form-control {
+    background: #23262f;
+    color: #faffff;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    border: 1px solid #444751;
+}
+
+input::placeholder, .form-control::placeholder {
+    color: #888b98;
+}
+
+.table {
+    background: #222;
+    color: #f6f8fa;
+}
+.table th, .table td {
+    vertical-align: middle !important;
+    background: #23262f !important;
+    color: #faffff;
+}
+.table-bordered th, .table-bordered td {
+    border-color: #333741;
+}
+
+.expired {
+    color: #ff7677;
+    font-weight: bold;
+}
+
+#themeToggle {
+    min-width: 120px;
+    margin-bottom: 8px;
+    background: #181a1b !important;
+    color: #eee !important;
+    border: 1px solid #444751 !important;
+}
+
+.alert {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: #23262f;
+    color: #ffeaea;
+    border: 1px solid #ef9898;
+}
+
+.copy-btn {
+    min-width: 80px;
+    font-size: 0.9em;
+    background: #181a1b;
+    color: #e8ebf0;
+    border: 1px solid #444751;
+}

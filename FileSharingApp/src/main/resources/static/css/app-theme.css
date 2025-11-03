@@ -1,0 +1,86 @@
+/* app-theme.css */
+body {
+    background: linear-gradient(120deg, #dae2f8 0%, #d6a4a4 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+}
+
+.login-box, .main-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 22px #b0bbc5;
+    margin-top: 60px;
+    padding: 35px 30px;
+}
+
+.brand-logo {
+    width: 90px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 1px 6px #bbb;
+}
+
+.btn-google {
+    background-color: #ea4335 !important;
+    color: #fff !important;
+    border: none !important;
+}
+.btn-github {
+    background-color: #24292f !important;
+    color: #fff !important;
+    border: none !important;
+}
+.btn-google:hover, .btn-github:hover {
+    opacity: 0.90;
+    color: #fff !important;
+}
+.login-title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    color: #24292f;
+}
+
+input[type="file"], input[type="number"], .form-control {
+    background: #f6f8fb;
+    color: #222;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
+/* Table enhancements */
+.table {
+    background: #f9f9f9;
+    color: #232323;
+}
+.table th, .table td {
+    vertical-align: middle !important;
+}
+.table-bordered th, .table-bordered td {
+    border-color: #d1d6e0;
+}
+
+/* Expired Row */
+.expired {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Theme Switcher (optional tweaks) */
+#themeToggle {
+    min-width: 120px;
+    margin-bottom: 8px;
+}
+
+/* Alert Messages */
+.alert {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Copy Button */
+.copy-btn {
+    min-width: 80px;
+    font-size: 0.9em;
+}
