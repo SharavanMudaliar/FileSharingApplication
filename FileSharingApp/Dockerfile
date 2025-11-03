@@ -12,8 +12,7 @@ COPY pom.xml pom.xml
 # Make Maven wrapper executable (CRITICAL for Linux-based builds)
 RUN chmod +x mvnw
 
-# Download dependencies first (cache efficiency)
-RUN ./mvnw dependency:go-offline
+RUN ./mvnw package -DskipTests
 
 # Copy the rest of the source code
 COPY src src
